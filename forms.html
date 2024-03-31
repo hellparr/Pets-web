@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Mascotas-Formulario</title>
+</head>
+
+<body>
+  <h2><strong>FORMULARIO TIENDA DE MASCOTAS</strong></h2>
+  <p><small><em>Información recibida por el usuario</em>:</small></p>
+  <hr>
+  <p><strong>Datos Ingresados</strong>:</p>
+  <div>
+    <p>Alimento: <strong><span id="pet-alimento"></span></strong></p>
+    <p>Juguetes: <strong><span id="pet-juguetes"></span></strong></p>
+    <p>Snacks: <strong><span id="pet-snacks"></span></strong></p>
+    <p>Utilidades: <strong><span id="pet-utilidades"></span></strong></p>
+    <p>Mascota: <strong><span id="mascota"></span></strong></p>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const alimento = urlParams.get('pet-alimento');
+    const juguetes = urlParams.get('pet-juguetes');
+    const snacks = urlParams.get('pet-snacks');
+    const utilidades = urlParams.get('pet-utilidades');
+    const mascota = urlParams.get('mascota');
+    document.getElementById('pet-alimento').textContent = alimento;
+    document.getElementById('pet-juguetes').textContent = juguetes;
+    document.getElementById('pet-snacks').textContent = snacks;
+    document.getElementById('pet-utilidades').textContent = utilidades
+    document.getElementById('mascota').textContent = mascota
+  </script>
+
+  <hr>
+  <a href="index.html"><input type="submit" value="pagina anterior"></a><br>
+  <a href="index.html" target="_blank" rel="noopener noreferrer"><img
+      src="imagen/Haru 1.png" alt="Maven y Haru" width="550" height="550" align="down"></a>
+
+</body>
+
+</html>

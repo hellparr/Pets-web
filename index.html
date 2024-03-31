@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>TiendaDeMascotas</title>
+</head>
+
+<body>
+  <h1><strong>BIENVENIDOS</strong></h1>
+  <h2><strong>Tienda De Mascotas.</strong></h2>
+  <main>
+    <hr>
+    <div>
+      <img src="imagen/Haru 2.jpg" alt="Haru y Maven" width="600" height="500" align="right"/>
+      <form action="forms.html" method="get">
+        <ul>
+          <li><label for="pet-alimento"><strong>Alimento</strong>:</label></li>
+          <select name="pet-alimento" id="pet-alimento">
+            <option value="">Selecciona una opción</option>
+            <option value="max">Max</option>
+            <option value="hills">Hills</option>
+            <option value="agility_gold">Agility Dog</option>
+            <option value="dog_chow">Dog Chow</option>
+            <option value="diamond_naturals">Diamond Naturals</option>
+          </select>
+        </ul>
+        <ul>
+          <li><label for="pet-juguetes"><strong>Juguetes</strong>:</label></li>
+          <select name="pet-juguetes" id="pet-juguetes">
+            <option value="">Selecciona una opción</option>
+            <option value="pelota">Pelota</option>
+            <option value="hueso_juguete_comestible">Hueso Juguete Comestible</option>
+            <option value="bola_maciza">Bola Maciza</option>
+            <option value="pelota_lick_and_snack">Pelota Lick and Snack</option>
+            <option value="laser">Láser</option>
+          </select>
+        </ul>
+        <ul>
+          <li><label for="pet-snacks"><strong>Snacks</strong>:</label></li>
+          <select name="pet-snacks" id="pet-snacks">
+            <option value="">Selecciona una opción</option>
+            <option value="chunky_snacks">Chunky Snacks</option>
+            <option value="bombonera_snack">Bombonera Snack</option>
+            <option value="smartbones_dental">Smartbones Dental</option>
+            <option value="bocaditos_canamor">Bocaditos CanAmor</option>
+            <option value="hills_snack">Hills Snack</option>
+          </select>
+        </ul>
+        <ul>
+          <li><label for="pet-utilidades"><strong>Utilidades</strong>:</label></li>
+          <select name="pet-utilidades" id="pet-utilidades">
+            <option value="">Selecciona una opción</option>
+            <option value="collares">Collares</option>
+            <option value="placa_identificacion">Placa Identificación</option>
+            <option value="peine">Peine</option>
+            <option value="cepillo_de_dientes">Cepillo de Dientes</option>
+            <option value="peluche_oso">Peluche OSo</option>
+          </select>
+        </ul>
+        <ul>
+          <li><label><strong>Mascota</strong>:<br><input type="text" id="mascota" name="mascota"
+                placeholder="Nombre de la mascota" required></label></li>
+        </ul>
+        <input type="submit" value="Enviar">
+      </form>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
